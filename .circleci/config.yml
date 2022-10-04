@@ -11,9 +11,9 @@ jobs:
           name: Install dependencies
           command: |
             apk add --no-cache \
-              py-pip=9.0.0-r1
+              py-pip=22.1.1-r0
             pip install \
-              awscli==1.11.76
+              awscli==1.25.86
       - restore_cache:
           keys:
             - v1-{{ .Branch }}
